@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ventilation Controller</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/png" href="/web/img/favicon.png" />
+        <link rel="stylesheet" href="/web/style/main.css">
+        <script src="/web/js/main.js"></script>
+    </head>
+    <body class="bg">
+        <div class="alert-box">
+            <div id="alert-generic-success" class="alert alert-success" role="alert">
+                <H4>Done.</H4>
+            </div>
+            <div id="alert-generic-error" class="alert alert-danger" role="alert">
+                <H4>An error occured!</H4>
+            </div>
+        </div>
+        <div class="modal-dialog modal-custom">
+            <div class="modal-content" style="opacity: 0.9;">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <h4 class="modal-title" style="margin: 0 auto; text-align: center">Ventilation Controller</h4>
+                </div>
+                <div class="modal-body">
+                    <table id="main-buttons">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button id="toggle-auto" type="button" class="btn btn-info btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </button><br/>
+                                    <h4>Automatic</h4>
+                                </td>
+                                <td>
+                                    <button id="toggle-away" type="button" class="btn btn-success btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-leaf"></span>
+                                    </button><br/>
+                                    <h4>Away</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="to-speed" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-signal"></span>
+                                    </button>
+                                    <h4>Fixed</h4>
+                                </td>
+                                <td>
+                                    <button id="to-timer" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </button>
+                                    <h4>Timer</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="speed-buttons">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button id="toggle-speed-1" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">1</h2>
+                                    </button><br/>
+                                    <h4>Low</h4>
+                                </td>
+                                <td>
+                                    <button id="toggle-speed-2" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">2</h2>
+                                    </button><br/>
+                                    <h4>Medium</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="toggle-speed-3" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">3</h2>
+                                    </button>
+                                    <h4>High</h4>
+                                </td>
+                                <td>
+                                    <button id="cancel-speed"type="button" class="btn btn-danger btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </button>
+                                    <h4>Cancel</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="timer-buttons">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button id="toggle-timer-15" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">15'</h2>
+                                    </button><br/>
+                                    <h4>Short</h4>
+                                </td>
+                                <td>
+                                    <button id="toggle-timer-30" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">30'</h2>
+                                    </button><br/>
+                                    <h4>Normal</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="toggle-timer-60" type="button" class="btn btn-primary btn-circle btn-xl">
+                                        <h2 class="nomargin">60'</h2>
+                                    </button>
+                                    <h4>Long</h4>
+                                </td>
+                                <td>
+                                    <button id="cancel-timer" type="button" class="btn btn-danger btn-circle btn-xl">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </button>
+                                    <h4>Cancel</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
