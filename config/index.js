@@ -9,9 +9,9 @@ const config = {};
 
 // Application configuration
 config.application = {
-    port: process.env.PORT || 8080,
-    host: process.env.HOST || '0.0.0.0',
-    loglevel: process.env.LOGLEVEL || 'info'
+    port: process.env.NODE_PORT || 8080,
+    host: process.env.NODE_HOST || '0.0.0.0',
+    loglevel: process.env.NODE_LOGLEVEL || 'info'
 }
 
 // Setup of the GPIO pins
