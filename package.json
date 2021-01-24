@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "HOST=0.0.0.0 LOGLEVEL=debug npx nodemon server.js"
+    "start": "NODE_HOST=0.0.0.0 NODE_LOGLEVEL=debug npx nodemon server.js"
   },
   "author": "Dusty Lefevre",
   "license": "Unlicense",
