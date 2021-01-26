@@ -23,7 +23,7 @@ error = () => {
 }
 
 post_mode = (mode) => {
-    $.post("/api/ventilation/setMode", {'mode': mode})
+    $.post("/api/ventilation/mode", {'mode': mode})
         .fail(() => {
             error();
         })
@@ -33,7 +33,7 @@ post_mode = (mode) => {
 }
 
 post_timer = (duration) => {
-    $.post("/api/ventilation/setTimer", {'duration': duration})
+    $.post("/api/ventilation/timer", {'duration': duration})
         .fail(() => {
             error();
         })

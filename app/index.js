@@ -36,7 +36,7 @@ ok = (res) => {
 
 
 // Default get
-app.post("/api/ventilation/setMode", (req, res) => {
+app.post("/api/ventilation/mode", (req, res) => {
     if(!("mode" in req.body)) {
         error(res, 400, "Mandatory property 'mode' wasn't specified.");
         return;
@@ -64,7 +64,7 @@ app.post("/api/ventilation/setMode", (req, res) => {
     ok(res);
 });
 
-app.post("/api/ventilation/setTimer", (req, res) => {
+app.post("/api/ventilation/timer", (req, res) => {
     if(!("duration" in req.body)) {
         error(res, 400, "Mandatory property 'duration' wasn't specified.");
         return;
@@ -84,6 +84,6 @@ app.get("/", (req, res) => {
 app.get("/web", (req, res) => {
     res.redirect(302, "/web/main.html");
 });
-
+app.get("/favicon")
 
 module.exports = app;
